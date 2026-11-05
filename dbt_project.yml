@@ -37,11 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
 #  define the catalog here <or> in profiles <or> in connector (in studio)
-#  +catalog: back_to_school
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
-    
+  +catalog: back_to_school
+  my_new_project:    
     staging:
       +materialized: view
