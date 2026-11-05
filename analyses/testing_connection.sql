@@ -1,2 +1,0 @@
-select *
-from back_to_school.jaffle_shop.customers;
